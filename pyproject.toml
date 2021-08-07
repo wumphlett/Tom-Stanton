@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "adtn_coop_bot"
+version = "1.0.0"
+description = ""
+authors = ["Will Humphlett <will@humphlett.net>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+"discord.py" = "^1.7.3"
+python-dotenv = "^0.19.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+coop-bot = 'adtn_coop_bot.adtn_coop_bot:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
